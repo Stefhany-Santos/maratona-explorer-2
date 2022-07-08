@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap");
+:root {
+  --main-color: #121212;
+  --color: #8e31cb;
+  --color-hover: #6f269e;
+  --color-title: #f2f2f2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--main-color);
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  text-align: center;
+  width: 300px;
+  margin: 60px auto;
+}
+
+img {
+  width: 100%;
+}
+
+img.avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 3.7px;
+  border: var(--color) solid 4px;
+  transition: 0.6s;
+  cursor: pointer;
+}
+img.avatar:hover {
+  border-radius: 50%;
+  width: 113px;
+  height: 113px;
+  padding: 3.7px;
+  border: var(--color-hover) solid 4.3px;
+  transition: 0.8s;
+}
+
+h1 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  color: var(--color-title);
+  font-size: 32px;
+}
+
+.username {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  color: var(--color-title);
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 48px 0;
+}
+
+a {
+  text-decoration: none;
+}
+ul li a {
+  color: var(--color-title);
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color);
+  text-transform: uppercase;
+  font-size: 14px;
+
+  margin-bottom: 16px;
+  border-radius: 6px;
+  gap: 8px;
+
+  transition: background 400ms;
+}
+
+ul li a:hover {
+  background: var(--color-hover);
+}
+
+
+ul li a .social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+ul li a .github-icon {
+  gap: 3px;
+}
+
+footer {
+  font-weight: 500px;
+  font-size: 13.2px;
+  color: var(--color-title);
+  opacity: 0.7;
+  cursor: pointer;
+}
+footer:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+footer a {
+  color: var(--color-title);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color);
+}
